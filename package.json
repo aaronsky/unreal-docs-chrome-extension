@@ -1,0 +1,19 @@
+{
+  "name": "unreal-docs-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to help with searching Unreal Engine 4 documentation",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronsky/unreal-docs-chrome-extension.git"
+  },
+  "author": "Aaron Sky",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aaronsky/unreal-docs-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/aaronsky/unreal-docs-chrome-extension#readme"
+}
