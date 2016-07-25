@@ -5,7 +5,8 @@
   "description": "Chrome extension to help with searching Unreal Engine 4 documentation",
   "version": "0.0.1",
   "homepage_url": "https://github.com/aaronsky/unreal-docs-chrome-extension",
-  
+  "default_locale": "en",
+
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -13,8 +14,9 @@
   },
   
   "permissions": [
-    "https://docs.unrealengine.com/latest/INT/*",
-    "http://docs.unrealengine.com/latest/INT/*"
+    "https://docs.unrealengine.com/latest/INT/API/*",
+    "http://docs.unrealengine.com/latest/INT/API/*",
+    "https://*.github.com/"
   ],
   
   "background": {
@@ -22,11 +24,11 @@
     "persistent": false
   },
   
-  "content_scripts":{
+  "content_scripts": [{
     "matches":["https://docs.unrealengine.com/latest/INT/*", "http://docs.unrealengine.com/latest/INT/*"],
     "js": ["src/context.js"]
-  },
-
+  }],
+  
   "omnibox": {
     "keyword": "ue4"
   }
